@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.finalworks.Register">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="210dp"
+        android:layout_height="213dp"
+        android:layout_gravity="center"
+        android:background="@drawable/headimage2"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textstyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.61"
+            android:text="用户名：" />
+
+        <EditText
+            android:id="@+id/registername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textstyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密码：" />
+
+        <EditText
+            android:id="@+id/registerpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="109dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:onClick="addtotableuser"
+        android:background="@drawable/confirm" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button10"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:background="@drawable/exit"
+        android:onClick="exit" />
+</LinearLayout>

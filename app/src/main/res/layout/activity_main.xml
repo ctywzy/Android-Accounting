@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.administrator.finalworks.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="162dp"
+        android:layout_height="163dp"
+        android:layout_gravity="center"
+        android:background="@drawable/headimage1"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/textstyle1"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户名：" />
+
+        <EditText
+            android:id="@+id/loginame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/textstyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.92"
+            android:text="密码:" />
+
+        <EditText
+            android:id="@+id/loginpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/login"
+            android:layout_marginLeft="65dp"
+            android:onClick="Login"
+            style="@style/textstyle1"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/register"
+            android:onClick="register"
+            style="@style/textstyle1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.09"
+            android:layout_marginLeft="78dp"
+            android:background="@drawable/play"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/stop"
+            android:onClick="stop"
+            android:layout_weight="0.01" />
+    </LinearLayout>
+</LinearLayout>

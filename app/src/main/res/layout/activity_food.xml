@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.finalworks.Consume.FoodActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/foodsum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textstyle1"
+            android:text="总金额：  " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textstyle1"
+            android:text="用处：" />
+
+        <EditText
+            android:id="@+id/foodapply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textstyle1"
+            android:text="金额：" />
+
+        <EditText
+            android:id="@+id/foodcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/add"
+            android:onClick="add"
+            android:layout_marginLeft="80dp" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/refresh1"
+            android:onClick="refresh"
+            android:layout_marginLeft="40dp" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/exit"
+            android:onClick="exit" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listfood"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.administrator.finalworks.ClassesActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/allsum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textstyle1"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="101dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:onClick="foodbill"
+        android:background="@drawable/food1"
+        android:layout_weight="0.01" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/button5"
+        android:layout_width="99dp"
+        android:layout_height="83dp"
+        android:onClick="shoppingbill"
+        android:background="@drawable/shoppingcart"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_marginTop="30dp"
+        android:layout_width="108dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:background="@drawable/car2"
+        android:onClick="travelbill"
+        android:text=""
+        android:layout_weight="0.13" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_marginTop="30dp"
+        android:layout_width="95dp"
+        android:layout_height="90dp"
+        android:background="@drawable/exit"
+        android:onClick="exit"
+        android:layout_gravity="center"
+        android:text=""
+        android:layout_weight="0.07" />
+
+</LinearLayout>
